@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let java = parseInt(prompt("Java 점수를 입력해주세요"));
+      let android = parseInt(prompt("Android 점수를 입력해주세요"));
+      let r = parseInt(prompt("R 점수를 입력해주세요"));
+      let avg = parseInt((java + android + r) / 3);
+      let grade = "";
+
+      if (avg >= 90) {
+        grade = "A";
+      } else if (avg >= 80) {
+        grade = "B";
+      } else if (avg >= 70) {
+        grade = "C";
+      } else {
+        grade = "F";
+      }
+
+      console.log("당신의 평균은" + avg + "이고" + grade + "입니다");
+    </script>
+  </body>
+</html>
