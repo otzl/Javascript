@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // object 객체 생성
+      let person = {
+        name: "권우진",
+        age: "28",
+      };
+
+      person.gender = "여자";
+      person.address = "부산";
+      person.favMovies = "센과 치히로의 행방불명";
+      person.favFood = "닭발, 떡볶이";
+
+      // this 라는 키워드 사용해서
+      // 객체 안에있는 다른 필드값을 가져 올 수 있다
+      person.greeting = function () {
+        console.log(
+          person.name +
+            "님의 나이는 " +
+            person.age +
+            "이고 성별은 " +
+            person.gender +
+            "입니다.\n" +
+            "사는 곳은 " +
+            person.address +
+            "이고 좋아하는 영화는 " +
+            person.favMovies +
+            "입니다.\n" +
+            "좋아하는 음식은 " +
+            person.favFood +
+            "입니다."
+        );
+      };
+      console.log(person.greeting());
+    </script>
+  </body>
+</html>

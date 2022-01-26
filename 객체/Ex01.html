@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 객체 만들기 (휴대폰)
+      // 변수 안에 객체에 대한 구조를 담아주다
+      // 데이터를 담을 때는 꼭 키 값(속성명) 함께 쌍으로 담아줘야한다
+      // 키 값을 구분 지을 때는 , 를 통해 구분 짓는다
+      let phone = {
+        number: "01012345678",
+        name: "lollipop",
+        call: function () {
+          console.log("전화를 걸다");
+        },
+        send: function () {
+          console.log("전화를 받다");
+        },
+      };
+
+      //객체를 통해 데이터 사용 -> 꼭 키 값을 통해 사용 가능
+      // 번호 출력
+      console.log("휴대폰 번호 " + phone.number);
+      console.log("휴대폰 이름 " + phone.name);
+      phone.call();
+
+      // 객체에 데이터를 더 추가하고 싶을 때
+      phone.price = "100만원";
+      console.log(phone);
+    </script>
+  </body>
+</html>
