@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="num">0</p>
+    <button id="plus">+1 증가</button>
+    <button id="minus">-1 감소</button>
+
+    <script>
+      let num = document.getElementById("num");
+      let num1 = 0;
+
+      document.querySelector("#plus").addEventListener("click", function () {
+        num1++;
+        num.innerText = num1;
+      });
+      document.querySelector("#minus").addEventListener("click", function () {
+        if (num1 > 0) {
+          num1--;
+          num.innerText = num1;
+        }
+      });
+      // <선생님 풀이>
+      // button에 속성 onclick 줘야함
+      //   let p = document.getElementById("text");
+      //   let num = pasrseInt(p.innerText);
+      //   function add() {
+      //     num++; // --> 간단한 더하기 빼기 같은 연산은
+      //     // 자동으로 형변환해서 계산이 됨
+      //     p.innerText = num;
+      //   }
+      //   function minus() {
+      //     if (num > 0) {
+      //       num--;
+      //       p.innerText = num;
+      //     }
+      //   }
+    </script>
+  </body>
+</html>

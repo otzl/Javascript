@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>자바를 자바라</p>
+    <img src="image.jpg" id="img" />
+
+    <script>
+      // p태그의 색깔을 빨간색으로 바꾸기
+      let p = document.getElementsByTagName("p");
+      p[0].style.color = "red";
+
+      // 태그 객체 . 속성명 = "원하는 값"
+      // 원하는 값으로 속성을 바꿀 수 있다
+      let img = document.getElementById("img");
+      // img.src = "cute.jpg";
+
+      // setAttribute()
+      img.setAttribute("src", "cute.jpg");
+    </script>
+  </body>
+</html>
